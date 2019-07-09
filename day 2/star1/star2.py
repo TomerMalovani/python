@@ -9,3 +9,4 @@ def check_sum(given_list):
 
 da_list = ["tomer", 31, "47", 16]
 check_sum(da_list)
+
