@@ -1,8 +1,11 @@
 from bottle import route, run,static_file,get
 import json
-@route('/')
-def html():
-    return static_file("index.html",root="")
+@route('/<x>')
+def for_gIlad(x):
+    if x == "tomer":
+        return "hello master"
+    else:
+        return "hello mortal"
 
 @get('/<filename:re:.*\.css>')
 def stylesheets(filename):
