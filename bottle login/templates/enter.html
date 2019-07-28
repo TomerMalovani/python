@@ -1,0 +1,7 @@
+<form action="/login" method="POST">
+    user-name : <input name="name" type="text">
+    password : <input name="password" type="password">
+    <input type="hidden" name="next_url" value={{next_url}}>
+    <input type="submit" value="login">
+    <span class="error_bar">{{error_msg}}</span>
+</form>
